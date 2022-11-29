@@ -11,10 +11,11 @@ html{
   outline: none;
 } 
 body {
+  margin: 0;
+  overflow-x: scroll;
   color: $main-text-color;
   background-color: $white-color;
   font-family: $main-font-family;
-  margin: 0;
 }
 .section{
   width: 100%;
@@ -23,6 +24,7 @@ body {
   margin: 0 auto;
 }
 .container{
+  width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -49,36 +51,16 @@ img {
   display: flex;
   flex-direction: column;
 }
-
-@media screen and (max-width: 479px) {
-  body {
-    overflow-x: scroll;
-  }
-  .section{
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   body {
     overflow-x:none;
   }
-  .container{
-    width: 480px;
-  }
-
 }
-
 @media screen and (min-width: 768px){
-  .section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .container{
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1200px){
   .section{
     padding-top: 94px;

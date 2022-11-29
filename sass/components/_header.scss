@@ -16,6 +16,8 @@
   display: inline-block;
   padding-bottom: 32px;
   letter-spacing: 0.02em;
+  font-size: 40px;
+  line-height: 1.17;
 
   color: $title-text-color;
   @include transition(color);
@@ -26,6 +28,7 @@
   }
 }
 .header-contact__link {
+  font-weight: 500;
   letter-spacing: 0.02em;
   
   color: $main-text-color;
@@ -36,65 +39,53 @@
   color: $accent-color;
   }
 }
+.header-nav__list{
+  margin-bottom: 32px;
+}
+.header-contact__link--mail{
+  position: absolute;
+  bottom:134px;
 
-@media screen and (max-width: 767px) {
-  .header-nav__list{
-    margin-bottom: 32px;
-  }
-  .header-nav__link{
-    font-size: 40px;
-    line-height: 1.17;
-  }
-  .header-contact__link{
-    font-weight: 500;
-  }
-  .header-contact__link--mail{
-    position: absolute;
-    bottom:134px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.header-contact__link--tel{
+  position: absolute;
+  bottom: 194px;
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .header-contact__link--tel{
-    position: absolute;
-    bottom: 194px;
+  font-size: 34px;
+  line-height: 1.17;
+  color: $accent-color;
+}
+.header__community-list{
+  position: absolute;
+  bottom: 48px;
+  display: flex;
+}
+.header__community-link{
+  display: inline-block;
 
-    font-size: 34px;
-    line-height: 1.17;
-    color: $accent-color;
-  }
-  .header__community-list{
-    position: absolute;
-    bottom: 48px;
-    display: flex;
-  }
-  .header__community-link{
-    display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  color: $accent-color;
 
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    padding-right: 10px;
-    color: $accent-color;
-
-    &:after{
-      content: "";
-      height: 10px;
-      border-right: 1px solid #21212120;
-      margin-left: 10px;
-    }
+  &:after{
+    content: "";
+    height: 10px;
+    border-right: 1px solid #21212120;
+    margin-left: 10px;
   }
 }
-  
 @media screen and (min-width: 768px){
   .header__community-list{
     display: none;
   }
   .header-nav{
     display: flex;
-
     align-items: center;
     padding: 0;
   }
@@ -103,7 +94,6 @@
     align-items: center;
     padding-top: 0;
   
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.14;
   }

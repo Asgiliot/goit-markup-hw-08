@@ -7,6 +7,7 @@
 .principles__title{
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
   
   font-weight: 700;
   font-size: 14px;
@@ -34,6 +35,7 @@
   border-radius: 4px;
 }
 .principles__item{
+  width: 450px;
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
@@ -45,15 +47,6 @@
 .principles__list{
   margin-left: -15px;
   margin-right: -15px;
-}
-
-@media screen and (max-width: 767px) {
-    .principles__item{
-      width: 450px;
-    }
-    .principles__title{
-      text-align: center;
-    }
 }
 
 @media screen and (min-width: 768px){

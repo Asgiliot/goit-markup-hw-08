@@ -21,6 +21,7 @@
     margin: 0 -15px -30px -15px;
   }
   .team__item{
+    width: 450px;
     margin: 0 15px 30px 15px;
     background-color: $white-bg-color;
   
@@ -62,11 +63,6 @@
     padding: 30px 10px;
   }
 
-@media screen and (max-width: 767px) {
-  .team__item{
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px){
   .team__item{
     width: 354px;
