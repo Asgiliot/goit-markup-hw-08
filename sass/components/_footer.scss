@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $footer-hero-bgcolor;
-  width: 480px;
+  min-width: 480px;
 }
 
 .footer-padding{
@@ -84,9 +84,6 @@
   .footer-padding{
     display: flex;
     flex-wrap: wrap;
-  }
-  .footer{
-    width: 768px;
   }
 }
 @media screen and (min-width: 1200px){
