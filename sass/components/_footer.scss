@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $footer-hero-bgcolor;
-  min-width: 480px;
+  width: 100%;
 }
 
 .footer-padding{
@@ -61,7 +61,7 @@
   text-align: center;
 }
 .footer-form__input{
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 0 16px;
   margin-right: 12px;
@@ -79,7 +79,11 @@
 .footer-form__input:focus{
   border-color: $accent-color;
 }
-
+@media screen and (min-width: 480px){
+  .footer-form__input{
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px){
   .footer-padding{
     display: flex;

@@ -59,6 +59,7 @@
   position: absolute;
   bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
 }
 .header__community-link{
   display: inline-block;
@@ -76,6 +77,16 @@
     border-right: 1px solid #21212120;
     margin-left: 10px;
   }
+}
+.header-nav__link--active{
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+  @include transition(color);
 }
 @media screen and (min-width: 768px){
   .header-contact__link--mail,
@@ -135,14 +146,6 @@
   }
   .header-nav__link--active{
     padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  
-    color: $accent-color;
-    @include transition(color);
 
     &:after{
       content: "";

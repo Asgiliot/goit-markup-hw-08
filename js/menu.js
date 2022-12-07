@@ -1,6 +1,7 @@
 "use strict"
 const menuBtnRef = document.querySelector("[data-menu-button]");
 const mobileMenuRef = document.querySelector("[data-menu]");
+const mobileMenuBodyRef = document.querySelector("[data-menu-is-open]");
 
 menuBtnRef.addEventListener("click", () => {
     const expanded = 
@@ -10,6 +11,8 @@ menuBtnRef.addEventListener("click", () => {
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
+
+    mobileMenuBodyRef.classList.toggle("menu-is-open");
 });
 function toggleModal(){
     document.body.classList.toggle("modal-open");
